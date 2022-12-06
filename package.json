@@ -1,0 +1,29 @@
+{
+  "name": "eslint-plugin-ban-type-assertion",
+  "version": "0.0.1",
+  "description": "Disallow type assertions in TypeScript code",
+  "main": "lib/index.js",
+  "files": [
+    "/lib"
+  ],
+  "repository": "https://github.com/zgotsch/eslint-plugin-ban-type-assertion",
+  "author": "Zach Gotsch <orbipedis@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "assertion"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0 || ^8.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.29.0",
+    "jest": "^29.3.1",
+    "typescript": "^4.9.3"
+  }
+}
