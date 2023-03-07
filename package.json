@@ -17,11 +17,16 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "testMatch": [
+      "**/tests/**/*.js"
+    ]
+  },
   "peerDependencies": {
     "eslint": "^7.0.0 || ^8.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^5.4.0",
+    "@typescript-eslint/parser": "^5.54.1",
     "eslint": "^8.29.0",
     "jest": "^29.3.1",
     "typescript": "^4.9.3"
