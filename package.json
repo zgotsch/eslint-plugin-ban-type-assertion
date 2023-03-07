@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ban-type-assertion",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Disallow type assertions in TypeScript code",
   "main": "lib/index.js",
   "files": [
@@ -15,7 +15,8 @@
     "assertion"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "cp docs/rules/ban-type-assertion.md README.md"
   },
   "jest": {
     "testMatch": [

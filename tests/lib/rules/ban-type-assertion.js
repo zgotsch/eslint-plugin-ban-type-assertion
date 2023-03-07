@@ -38,13 +38,17 @@ ruleTester.run("ban-type-assertion", rule, {
       code: 'const foo = "foo" as AllowedTypeWithNoBans',
       options: [],
     },
+    {
+      code: 'const foo = "foo" as string',
+      options: [],
+    },
   ],
 
   invalid: [
     {
       code: 'const foo = "foo" as BannedType',
       options: [{typeName: "BannedType"}],
-      errors: [{message: "Coercion to this type is banned."}],
+      errors: [{message: 'Coercion to the type "BannedType" is banned.'}],
     },
     {
       code: 'const foo = "foo" as BannedType',
@@ -56,7 +60,7 @@ ruleTester.run("ban-type-assertion", rule, {
     {
       code: 'const foo = <BannedType>"foo"',
       options: [{typeName: "BannedType"}],
-      errors: [{message: "Coercion to this type is banned."}],
+      errors: [{message: 'Coercion to the type "BannedType" is banned.'}],
     },
     {
       code: 'const foo = <BannedType>"foo"',
